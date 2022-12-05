@@ -18,13 +18,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
+    - hatch-vcs
+    - hatchling
   run:
-    - python >=3.6
+    - python >=3.7
     - httpx >=0.19
     - platformdirs
-    - prettytable >=2.4.0
+    - prettytable >=2.4
+    # pytablewriter[html]
+    - dominate >=2.1.5,<3
     - pytablewriter >=0.63
     - python-dateutil
     - python-slugify
