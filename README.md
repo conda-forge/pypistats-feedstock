@@ -1,11 +1,11 @@
-About pypistats
-===============
+About pypistats-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pypistats-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hugovk/pypistats
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pypistats-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python interface to PyPI Stats API https://pypistats.org/api
 
