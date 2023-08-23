@@ -1,5 +1,5 @@
 {% set name = "pypistats" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pypistats-{{ version }}.tar.gz
-  sha256: 8e34e25478d87944e67cd471cb896c1ea3b6dcaa30dc313fec6aed30605cfae5
+  sha256: ed2660d8a073572f5254eaaeec4e031f7e6f837ee386fe9792f8085126d32e9d
 
 build:
   noarch: python
