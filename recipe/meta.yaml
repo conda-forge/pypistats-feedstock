@@ -1,5 +1,5 @@
 {% set name = "pypistats" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pypistats-{{ version }}.tar.gz
-  sha256: ed2660d8a073572f5254eaaeec4e031f7e6f837ee386fe9792f8085126d32e9d
+  sha256: 7007b1ecc4a62749314c6ddaafd1908315c1f5185f8a010004c13631f058a993
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ requirements:
     - pytablewriter >=0.63
     # pytablewriter[html]
     - dominate >=2.1.5,<3
-    - pytablewriter >=0.63  
+    - pytablewriter >=0.63
     - python-dateutil
     - python-slugify
     - termcolor >=2.1
