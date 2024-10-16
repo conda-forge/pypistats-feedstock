@@ -1,5 +1,5 @@
 {% set name = "pypistats" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pypistats-{{ version }}.tar.gz
-  sha256: 7007b1ecc4a62749314c6ddaafd1908315c1f5185f8a010004c13631f058a993
+  sha256: dbd5ebaf0f0769eab42ee21c4bf183e4f5ca78292fdaf92a2fa4893ebc57a9f5
 
 build:
   entry_points:
@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - hatch-vcs
     - hatchling
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - httpx >=0.19
     - platformdirs
     - prettytable >=2.4
