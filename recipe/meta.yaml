@@ -1,5 +1,5 @@
 {% set name = "pypistats" %}
-{% set version = "1.8.0" %}
+{% set version = "1.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pypistats-{{ version }}.tar.gz
-  sha256: c0d6da0cb0f11fba6ff8b7bc5c9040486793c905ba5cf5bb08c3ebfd72f76419
+  sha256: 5587c07445c227f19afdf09f9d1a3ab79ed04fcf4d47b468c780d15e4f394140
 
 build:
   entry_points:
