@@ -1,5 +1,5 @@
 {% set name = "pypistats" %}
-{% set version = "1.11.0" %}
+{% set version = "1.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pypistats-{{ version }}.tar.gz
-  sha256: 99059cabd3b9dc60fea8553aa03fe9c5eeca8dcb3486830f05b6cfed2f0ebf2a
+  sha256: d2b47a0dbc5d03bc09499d2e5369fbcae64907c86fae296fe3fda2701babe35d
 
 build:
   entry_points:
@@ -23,6 +23,7 @@ requirements:
     - hatchling
     - pip
   run:
+    - urllib3 >=2
     - python >={{ python_min }}
     - httpx >=0.19
     - platformdirs
@@ -30,7 +31,7 @@ requirements:
     - pytablewriter >=0.63
     - python-dateutil
     - python-slugify
-    - termcolor >=2.1
+    - termcolor >=3.2
     # pytablewriter[html]
     - dominate >=2.1.5,<3
     - pytablewriter >=0.63
